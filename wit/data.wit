@@ -1,0 +1,23 @@
+
+
+interface data {
+    resource counter {
+        constructor(value: u8);
+        // add: func(amount: u8) -> result<counter, error>;
+        // dec: func(amount: u8) -> result<counter, error>;
+        add: func(amount: u8) -> u8;
+        dec: func(amount: u8) -> u8;
+    }
+
+
+    variant error {
+        generic,
+        other(string)
+    }
+}
+
+interface component {
+    use data.{counter, error};
+
+    modify: func() -> result<counter, error>;
+}

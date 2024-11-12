@@ -1,0 +1,25 @@
+spin_manifest_version = 2
+
+[application]
+authors = ['smndtrl <smndtrl@users.noreply.github.com>']
+description = 'Test events'
+name = 'events'
+version = '0.1.0-canary'
+
+[application.trigger.line]
+a = 1
+
+[[trigger.line]]
+interval_secs = 6
+component = "store"
+
+[component]
+[component.store]
+source = '../target/wasm32-wasip1/debug/component.wasm'
+
+[component.processor1]
+source = '../target/wasm32-wasip1/debug/component.wasm'
+[component.processor2]
+source = '../target/wasm32-wasip1/debug/component.wasm'
+[component.processor3]
+source = '../target/wasm32-wasip1/debug/component.wasm'

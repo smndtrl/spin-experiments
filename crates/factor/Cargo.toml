@@ -1,0 +1,14 @@
+[package]
+name = "factor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+spin-core = { workspace = true }
+spin-factors = { workspace = true }
+spin-locked-app = { workspace = true }
+spin-resource-table = { workspace = true }
+spin-runtime-config = { workspace = true }
+anyhow = { workspace = true }
+
+world = { path = "../world" }

@@ -1,0 +1,1 @@
+RUST_LOG=debug spin up -f tests/spin-simple.toml

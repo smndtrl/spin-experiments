@@ -1,0 +1,32 @@
+[package]
+name = "trigger"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+spin-app = { workspace = true }
+spin-core = { workspace = true }
+spin-factor-outbound-http = { workspace = true }
+spin-factor-outbound-networking = { workspace = true }
+spin-factor-wasi = { workspace = true }
+spin-factor-key-value = { workspace = true }
+spin-factor-variables = { workspace = true }
+spin-factors = { workspace = true }
+spin-factors-executor = { workspace = true }
+spin-http = { workspace = true }
+spin-telemetry = { workspace = true }
+spin-trigger = { workspace = true }
+spin-runtime-config = { workspace = true }
+spin-runtime-factors = { workspace = true }
+
+anyhow = { workspace = true }
+
+factor = { path = "../factor" }
+world = { path = "../world" }
+
+tracing = { workspace = true }
+
+tokio = { workspace = true, features = [ "macros" ]}
+clap = { workspace = true, features = ["derive", "env"]  }
+
+wasmtime = { workspace = true }

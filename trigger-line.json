@@ -1,0 +1,16 @@
+{
+  "name": "trigger-line",
+  "description": "Run components in a line",
+  "homepage": "...",
+  "version": "0.1.0",
+  "spinCompatibility": ">=2.0",
+  "license": "Apache-2.0",
+  "packages": [
+    {
+      "os": "linux",
+      "arch": "aarch64",
+      "url": "file:///workspaces/spin-experiments/trigger-line-0.1.0-linux-aarch64.tar.gz",
+      "sha256": "aafbb3763a6268b33d32d6930430837416dcc2af75fd7484a3aced9889cbe726"
+    }
+  ]
+}

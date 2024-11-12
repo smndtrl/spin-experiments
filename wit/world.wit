@@ -1,0 +1,10 @@
+package smndtrl:experiments;
+
+world imports {
+    import data;
+}
+
+world counter {
+    include imports;
+    export component;
+}

@@ -1,0 +1,12 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+spin-app = { workspace = true }
+spin-factors-test = { workspace = true }
+
+toml = { workspace = true }
+
+tokio = { workspace = true, features = [ "macros" ]}
